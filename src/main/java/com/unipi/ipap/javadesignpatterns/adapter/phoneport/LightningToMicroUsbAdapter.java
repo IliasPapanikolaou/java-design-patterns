@@ -17,6 +17,6 @@ public class LightningToMicroUsbAdapter implements IMicroUsbPhone {
     @Override
     public String recharge() {
         lightningPhone.recharge();
-        return "Recharge started";
+        return "Recharge started...";
     }
 }
