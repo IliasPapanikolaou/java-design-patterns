@@ -25,3 +25,16 @@ UML class and sequence diagram
 ![decorator_uml2](https://upload.wikimedia.org/wikipedia/commons/8/83/W3sDesign_Decorator_Design_Pattern_UML.jpg)
 
 source: <https://en.wikipedia.org/wiki/Decorator_pattern>
+
+## Adapter design pattern
+
+### What problems can it solve?
+
+Consider a scenario in which there is an app that's developed in the US which returns the top speed of 
+luxury cars in miles per hour (MPH). Now we need to use the same app for our client in the UK that wants 
+the same results but in kilometers per hour (km/h).
+
+To deal with this problem, we'll create an adapter which will convert the values and give us the desired results:
+
+![adapter_uml1](https://www.baeldung.com/wp-content/uploads/2017/09/Rpt_ER5p.jpg)
+
