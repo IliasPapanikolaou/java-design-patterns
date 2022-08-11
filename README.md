@@ -22,6 +22,7 @@ This allows working with different Decorator objects to extend the functionality
 ![decorator_uml1](https://upload.wikimedia.org/wikipedia/commons/c/c6/UML2_Decorator_Pattern.png)
 
 UML class and sequence diagram
+
 ![decorator_uml2](https://upload.wikimedia.org/wikipedia/commons/8/83/W3sDesign_Decorator_Design_Pattern_UML.jpg)
 
 source: <https://en.wikipedia.org/wiki/Decorator_pattern>
@@ -37,4 +38,23 @@ the same results but in kilometers per hour (km/h).
 To deal with this problem, we'll create an adapter which will convert the values and give us the desired results:
 
 ![adapter_uml1](https://www.baeldung.com/wp-content/uploads/2017/09/Rpt_ER5p.jpg)
+
+## Observer design pattern
+
+### What problems can the Observer design pattern solve?
+
+The Observer pattern addresses the following problems:
+
+- A one-to-many dependency between objects should be defined without making the objects tightly coupled.
+- It should be ensured that when one object changes state, an open-ended number of dependent objects are updated 
+automatically.
+- It should be possible that one object can notify an open-ended number of other objects.
+
+UML class and sequence diagram
+
+![observer_uml1](https://upload.wikimedia.org/wikipedia/commons/0/01/W3sDesign_Observer_Design_Pattern_UML.jpg)
+
+UML class diagram
+
+![observer_uml2](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Observer_w_update.svg/1920px-Observer_w_update.svg.png)
 

@@ -16,6 +16,7 @@ import com.unipi.ipap.javadesignpatterns.decorator.window.HorizontalScrollBarDec
 import com.unipi.ipap.javadesignpatterns.decorator.window.SimpleWindow;
 import com.unipi.ipap.javadesignpatterns.decorator.window.VerticalScrollBarDecorator;
 import com.unipi.ipap.javadesignpatterns.decorator.window.Window;
+import com.unipi.ipap.javadesignpatterns.observer.EnableObserver;
 
 public class Application {
 
@@ -65,6 +66,11 @@ public class Application {
 
         System.out.println("Recharging iPhone with MicroUsb");
         System.out.println(ChargePhone.rechargeMicroUsbPhone(new LightningToMicroUsbAdapter(iphone)));
+
+        // Adapter Car Speed
+        System.out.println("\n----Observer Design Pattern----");
+        EnableObserver.start();
+
 
     }
 }
