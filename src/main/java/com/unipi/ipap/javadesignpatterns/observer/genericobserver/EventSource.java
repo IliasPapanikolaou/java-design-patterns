@@ -1,4 +1,4 @@
-package com.unipi.ipap.javadesignpatterns.observer;
+package com.unipi.ipap.javadesignpatterns.observer.genericobserver;
 
 import java.util.ArrayList;
 import java.util.List;

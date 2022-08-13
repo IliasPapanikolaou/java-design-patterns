@@ -1,5 +1,7 @@
 # Java Design Patterns
 
+<https://en.wikipedia.org/wiki/Design_Patterns>
+
 ## Decorator design pattern
 
 ### What problems can it solve?
@@ -58,3 +60,19 @@ UML class diagram
 
 ![observer_uml2](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Observer_w_update.svg/1920px-Observer_w_update.svg.png)
 
+## Proxy design pattern
+
+### What problems can it solve?
+
+The Proxy design pattern is one of the twenty-three well-known GoF design patterns that describe how to solve 
+recurring design problems to design flexible and reusable object-oriented software, that is, 
+objects that are easier to implement, change, test, and reuse.
+
+- The access to an object should be controlled.
+- Additional functionality should be provided when accessing an object.
+
+![proxy_uml1](https://upload.wikimedia.org/wikipedia/commons/6/6e/W3sDesign_Proxy_Design_Pattern_UML.jpg)
+
+Class Diagram
+
+![proxy_uml2](https://www.baeldung.com/wp-content/uploads/2017/09/MrvrsH6.jpg)
