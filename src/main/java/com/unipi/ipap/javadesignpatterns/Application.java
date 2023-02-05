@@ -46,29 +46,6 @@ public class Application {
         decoratedCoffee = new WithSprinkles(decoratedCoffee);
         System.out.println(decoratedCoffee.printInfo());
 
-        // Adapter Car Speed
-        System.out.println("\n----Adapter Design Pattern----");
-
-        Movable bugattiVeyron = new BugattiVeyron();
-        MovableAdapter bugattiVeyronAdapter = new MovableAdapterImpl(bugattiVeyron);
-
-        System.out.println(bugattiVeyron.getSpeed() + " mph");
-        System.out.println(bugattiVeyronAdapter.getSpeed() + " km/h");
-
-        // Adapter Phone Port
-        System.out.println("------------------------------");
-        AndroidPhone androidPhone = new AndroidPhone();
-        Iphone iphone = new Iphone();
-
-        System.out.println("Recharging Android Phone with Micro USB");
-        System.out.println(ChargePhone.rechargeMicroUsbPhone(androidPhone));
-
-        System.out.println("Recharging iPhone with Lightning");
-        System.out.println(ChargePhone.rechargeLightningPhone(iphone));
-
-        System.out.println("Recharging iPhone with MicroUsb");
-        System.out.println(ChargePhone.rechargeMicroUsbPhone(new LightningToMicroUsbAdapter(iphone)));
-
         // Proxy Image
         System.out.println("------------------------------");
         ProxyImageDemo.proxyImageDemo();
