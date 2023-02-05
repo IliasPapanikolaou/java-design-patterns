@@ -1,13 +1,5 @@
-package com.unipi.ipap.javadesignpatterns;
+package com.unipi.ipap.javadesignpatterns.decorator;
 
-import com.unipi.ipap.javadesignpatterns.adapter.carspeed.BugattiVeyron;
-import com.unipi.ipap.javadesignpatterns.adapter.carspeed.Movable;
-import com.unipi.ipap.javadesignpatterns.adapter.carspeed.MovableAdapter;
-import com.unipi.ipap.javadesignpatterns.adapter.carspeed.MovableAdapterImpl;
-import com.unipi.ipap.javadesignpatterns.adapter.phoneport.AndroidPhone;
-import com.unipi.ipap.javadesignpatterns.adapter.phoneport.Iphone;
-import com.unipi.ipap.javadesignpatterns.adapter.phoneport.ChargePhone;
-import com.unipi.ipap.javadesignpatterns.adapter.phoneport.LightningToMicroUsbAdapter;
 import com.unipi.ipap.javadesignpatterns.decorator.coffee.Coffee;
 import com.unipi.ipap.javadesignpatterns.decorator.coffee.SimpleCoffee;
 import com.unipi.ipap.javadesignpatterns.decorator.coffee.WithMilk;
@@ -16,11 +8,8 @@ import com.unipi.ipap.javadesignpatterns.decorator.window.HorizontalScrollBarDec
 import com.unipi.ipap.javadesignpatterns.decorator.window.SimpleWindow;
 import com.unipi.ipap.javadesignpatterns.decorator.window.VerticalScrollBarDecorator;
 import com.unipi.ipap.javadesignpatterns.decorator.window.Window;
-import com.unipi.ipap.javadesignpatterns.observer.genericobserver.EnableObserver;
-import com.unipi.ipap.javadesignpatterns.proxy.image.ProxyImageDemo;
-import com.unipi.ipap.javadesignpatterns.proxy.object.ExpensiveObjectDemo;
 
-public class Application {
+public class DecoratorApplication {
 
     public static void main(String[] args) {
 
@@ -45,16 +34,5 @@ public class Application {
         // Add sprinkles
         decoratedCoffee = new WithSprinkles(decoratedCoffee);
         System.out.println(decoratedCoffee.printInfo());
-
-        // Proxy Image
-        System.out.println("------------------------------");
-        ProxyImageDemo.proxyImageDemo();
-        // Proxy Expensive Object
-        System.out.println("------------------------------");
-        ExpensiveObjectDemo.expensiveObjectDemo();
-
-        // Adapter Car Speed
-        System.out.println("\n----Observer Design Pattern----");
-        EnableObserver.start();
     }
 }
